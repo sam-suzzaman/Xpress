@@ -1,0 +1,112 @@
+.ticker_wrapper {
+    background-color: #e2e2e2;
+    margin-top: 20px;
+}
+
+.inner_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+.ticker_heading {
+    position: absolute;
+    background: #c50707;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 2rem;
+    padding: 0 20px;
+    z-index: 2;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticker_wrap .ticker_item:before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    background-color: #141cfc;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 15px;
+}
+
+/* .ticker_heading:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 11px solid #c50707;
+    position: absolute;
+    margin-left: 20px;
+} */
+
+.ticker_wrap {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 2rem;
+    padding-left: 100%;
+    box-sizing: content-box;
+}
+.ticker_wrap .ticker:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.ticker_wrap .ticker {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 45s;
+    animation-duration: 45s;
+}
+.ticker_wrap .ticker_item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 0.875rem;
+    color: #000;
+    letter-spacing: 1px;
+}
