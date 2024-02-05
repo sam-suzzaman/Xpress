@@ -5,6 +5,5 @@ export const getCategoryNews = async (category) => {
             cache: "no-store",
         }
     );
-
     return res.json();
 };
