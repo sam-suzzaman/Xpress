@@ -9,7 +9,7 @@ import { FaRegEye } from "react-icons/fa6";
 const HomepageSidebar = ({ newsData }) => {
     return (
         <aside>
-            <h3 className={style.sec_title}>Hot News</h3>
+            <h3 className={style.sec_title}>Recent News</h3>
             {/* news cards */}
             <div className="">
                 {/* card */}
