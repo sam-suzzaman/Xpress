@@ -1,3 +1,4 @@
+import Callout from "@/components/UI/HomepageCallout/Callout";
 import FeaturedNews from "@/components/UI/HomepageFeaturedNews/FeaturedNews";
 import HomepageHeroCard from "@/components/UI/HomepageHeroCard/HomepageHeroCard";
 import HomepageSidebar from "@/components/UI/HomepageSidebar/HomepageSidebar";
@@ -33,6 +34,8 @@ const HomePage = async () => {
                     <HomepageSidebar newsData={newsData} />
                 </div>
             </div>
+            {/* callout */}
+            <Callout />
         </>
     );
 };

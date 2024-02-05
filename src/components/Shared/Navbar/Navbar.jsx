@@ -50,7 +50,7 @@ const Navbar = () => {
     );
 
     return (
-        <div className="bg-100 flex justify-center shadow-md px-4 md:px-8">
+        <div className="bg-white flex justify-center shadow-md px-4 md:px-8 sticky top-0 z-20">
             <div className="navbar bg-base-100  max-w-[1200px]">
                 <div className="navbar-start">
                     <Link href="/">
