@@ -9,6 +9,8 @@ import { getAllNews } from "@/utils/getAllNews/getAllNews";
 const HomePage = async () => {
     const { data: newsData } = await getAllNews();
     const { data: cateogriesData } = await getAllCategories();
+
+    // throw new Error("Data not found");
     return (
         <>
             <TickerBar />

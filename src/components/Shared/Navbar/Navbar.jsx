@@ -14,7 +14,7 @@ const menuItems = [
     {
         _id: 2,
         title: "news",
-        href: "/categories/All",
+        href: "/categories/all",
     },
     {
         _id: 3,
