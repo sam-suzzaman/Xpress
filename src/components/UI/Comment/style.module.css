@@ -1,6 +1,7 @@
 .commentsContainer {
-    margin: 60px auto 15px;
-    width: 768px;
+    /* margin: 60px auto 15px; */
+    width: 100%; /*768*/
+    max-width: 768px;
 }
 
 .commentsContainer h1 {
