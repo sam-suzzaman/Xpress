@@ -22,7 +22,7 @@ const CategoryNewsPage = async ({ params }) => {
                 </span>
             </h3>
             {/* news row */}
-            <div className="grid grid-cols-2 justify-between gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 justify-between gap-8">
                 {categoryNewsData?.map((news) => {
                     return <NewsCard news={news} />;
                 })}

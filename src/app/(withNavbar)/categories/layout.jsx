@@ -15,7 +15,7 @@ const layout = async ({ children }) => {
                 />
 
                 {/* content:right side */}
-                <div className="drawer-content flex flex-col ml-10">
+                <div className="drawer-content flex flex-col lg:ml-10">
                     {children}
                 </div>
                 {/* content:left sidebar */}

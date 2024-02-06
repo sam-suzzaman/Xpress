@@ -30,7 +30,7 @@ const NewsCard = ({ news }) => {
                         {news?.category}
                     </span>
                 </figure>
-                <div className="card-body">
+                <div className="card-body max-[400px]:px-4">
                     <h2 className="card-title text-base group-hover:text-primary transition duration-300">
                         {news?.title.length > 40
                             ? news?.title.slice(0, 40) + "..."
