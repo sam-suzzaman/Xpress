@@ -1,0 +1,63 @@
+@keyframes floating {
+    from {
+        transform: translateY(0px);
+    }
+    65% {
+        transform: translateY(15px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.sec_container {
+    background-image: linear-gradient(to bottom, #05007a, #4d007d);
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_404 {
+    margin-bottom: 3rem;
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 6vmin;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.9vmin;
+    margin-bottom: 3rem;
+}
+
+.back_btn {
+    border: 1px solid white;
+    color: white;
+    height: 5vmin;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.back_btn:hover {
+    background: white;
+    color: #4d007d;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+    .back_btn {
+        font-size: 3.5vmin;
+    }
+}
