@@ -8,7 +8,10 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const NewsCard = ({ news }) => {
     return (
-        <Link href="/about" key={news._id}>
+        <Link
+            href={`/${news.category.toLowerCase()}/${news._id}`}
+            key={news._id}
+        >
             <div className="card w-full bg-base-100 shadow-xl rounded-lg group h-full">
                 <figure className="relative">
                     <Image

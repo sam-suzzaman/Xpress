@@ -8,7 +8,9 @@ import { FaRegEye } from "react-icons/fa6";
 const HomepageHeroCard = ({ newsData }) => {
     // console.log(newsData[0]);
     return (
-        <Link href="/about">
+        <Link
+            href={`/${newsData[0].category.toLowerCase()}/${newsData[0]._id}`}
+        >
             <div className="card w-full bg-base-100 shadow-xl rounded-lg group ">
                 <figure className="relative">
                     <Image

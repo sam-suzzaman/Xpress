@@ -15,7 +15,9 @@ const HomepageSidebar = ({ newsData }) => {
                 {/* card */}
                 {newsData?.map((news) => {
                     return (
-                        <Link href="/about">
+                        <Link
+                            href={`/${news.category.toLowerCase()}/${news._id}`}
+                        >
                             <div className="card lg:card-side bg-base-100 mb-4 rounded-none shadow-md py-3 group">
                                 <figure className=" w-full max-w-[100px]">
                                     <Image
