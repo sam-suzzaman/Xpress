@@ -14,8 +14,8 @@ const HomePage = async () => {
     return (
         <>
             <TickerBar />
-            <div className="grid grid-cols-5 gap-12 mt-8 mb-16 w-full max-w-[1200px] mx-auto">
-                <div className="col-span-3">
+            <div className="grid grid-cols-12 gap-8 xl:gap-12 mt-8 mb-16 px-4 w-full max-w-[1200px] mx-auto">
+                <div className="col-span-12 lg:col-span-8">
                     <div className="w-full">
                         <HomepageHeroCard newsData={newsData} />
                     </div>
@@ -32,7 +32,7 @@ const HomePage = async () => {
                         })}
                     </div>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-12 lg:col-span-4">
                     <HomepageSidebar newsData={newsData} />
                 </div>
             </div>

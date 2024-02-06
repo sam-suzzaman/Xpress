@@ -18,7 +18,7 @@ const HomepageSidebar = ({ newsData }) => {
                         <Link
                             href={`/${news.category.toLowerCase()}/${news._id}`}
                         >
-                            <div className="card lg:card-side bg-base-100 mb-4 rounded-none shadow-md py-3 group">
+                            <div className="card card-side bg-base-100 mb-4 rounded-none shadow-md py-3 group">
                                 <figure className=" w-full max-w-[100px]">
                                     <Image
                                         src={news?.thumbnail_url}
@@ -33,7 +33,7 @@ const HomepageSidebar = ({ newsData }) => {
                                     />
                                 </figure>
 
-                                <div className="card-body py-0 pr-3 pl-6">
+                                <div className="card-body py-0 pr-3 pl-4  sm:pl-6">
                                     <h2 className="card-title text-sm font-bold group-hover:text-primary transition-all duration-300">
                                         {newsData[0]?.title.length > 40
                                             ? newsData[0]?.title.slice(0, 40) +

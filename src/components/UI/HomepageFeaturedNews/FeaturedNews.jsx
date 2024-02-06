@@ -15,7 +15,7 @@ const FeaturedNews = async ({ category }) => {
         <div className="w-full mt-16">
             <h3 className={style.sec_title}>{category?.title}</h3>
             {/* news row */}
-            <div className="grid grid-cols-2 justify-between gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 justify-between gap-6 sm:gap-8">
                 {categoryNewsData?.slice(0, 2).map((news) => {
                     return <NewsCard news={news} />;
                 })}
