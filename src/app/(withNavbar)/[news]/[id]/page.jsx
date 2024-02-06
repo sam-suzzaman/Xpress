@@ -8,8 +8,8 @@ const NewsDetailsPage = async ({ params }) => {
     return (
         <section className="flex justify-center">
             <div className="w-full max-w-[1200px] px-4 py-8 mt-10">
-                <div className="grid grid-cols-12 justify-between gap-x-12">
-                    <div className="col-span-5">
+                <div className="grid grid-cols-12 justify-between gap-y-12 lg:gap-x-12">
+                    <div className="col-span-12 lg:col-span-5 order-2 lg:order-1">
                         <div className="grid grid-cols-12 gap-6">
                             <div className="col-span-12">
                                 <Image
@@ -40,7 +40,7 @@ const NewsDetailsPage = async ({ params }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-7">
+                    <div className="col-span-12 lg:col-span-7 order-1 lg:order-2">
                         <h2 className="text-2xl font-medium text-primary opacity-85">
                             {news.title}
                         </h2>
@@ -62,9 +62,6 @@ const NewsDetailsPage = async ({ params }) => {
                                     {news.author.published_date}
                                 </span>
                             </h6>
-                            {/* <span className="text-[13px] font-medium text-black opacity-75 inline-block">
-                                {news.author.published_date}
-                            </span> */}
                         </div>
                         <div className="mb-6">
                             <h6 className="flex justify-start items-center text-[13px] font-medium text-gray-500">
